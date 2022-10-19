@@ -27,7 +27,8 @@
 				<div class="col-md-6 col-lg-4">
 					<div class="login-wrap p-0">
 		      	<h3 class="mb-4 text-center">Have an account?</h3>
-		      	<form action="#" class="signin-form">
+		      	<form action="/login" method="POST" class="signin-form">
+                    @csrf
 		      		<div class="form-group">
 		      			<input type="text" class="form-control" placeholder="Username" required>
 		      		</div>
@@ -41,15 +42,16 @@
 	            <div class="form-group d-md-flex">
 	            	<div class="w-50">
 		            	<label class="checkbox-wrap checkbox-primary">Remember Me
-									  <input type="checkbox" checked>
-									  <span class="checkmark"></span>
-									</label>
-								</div>
-								<div class="w-50 text-md-right">
-									<a href="#" style="color: #fff">Forgot Password</a>
-								</div>
+							<input type="checkbox" checked>
+							<span class="checkmark"></span>
+						</label>
+					</div>
+					<div class="w-50 text-md-right">
+						<a href="#" style="color: #47B5FF">Forgot Password</a>
+					</div>
 	            </div>
-	          </form>
+			</form>
+				
 	          <p class="w-100 text-center">&mdash; Or Sign In With &mdash;</p>
 	          <div class="social d-flex text-center">
 	          	<a href="#" class="px-2 py-2 mr-md-1 rounded"><span class="ion-logo-facebook mr-2"></span> Facebook</a>
